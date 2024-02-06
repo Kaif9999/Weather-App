@@ -1,0 +1,184 @@
+/* Reset some default styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+   font-family: 'Roboto', sans-serif;
+   background: linear-gradient(to bottom, #0074a3, #00547e);
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background-image: url('weather-images.jpg'); /* Replace with your image file path */
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+/* Background overlay */
+body::before {
+   content: "";
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+   z-index: -1; /* Place the overlay behind content */
+}
+
+/* Main container styles */
+.main-container {
+   background-color: rgba(255, 255, 255, 0.95);
+   border-radius: 15px;
+   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 600px; /* Limit the maximum width */
+   margin: 0 auto; /* Center-align the container horizontally */
+}
+
+/* Container 1 styles */
+.container1 {
+   background-color: #f8f8f8;
+   border-radius: 15px;
+   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 20px; /* Add some space between Container 1 and Container 2 */
+}
+
+/* Container 2 styles */
+.container2 {
+   background-color: #f8f8f8;
+   border-radius: 15px;
+   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* Header styles */
+h1 {
+   color: #333;
+   margin: 0;
+   font-size: 24px;
+}
+
+/* Label and input styles */
+.label-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 15px;
+}
+
+label {
+   font-weight: bold;
+   display: inline-block;
+   margin-right: 10px;
+   color: #0b0b0b;
+   font-size: 20px;
+}
+
+input[type="text"] {
+   width: 60%;
+   padding: 12px;
+   border: 2px solid #0d0d0e;
+   border-radius: 25px;
+   outline: none;
+   transition: border-color 0.3s;
+   font-size: 18px;
+}
+
+/* Button styles */
+#getWeather {
+   background-color: #0074a3;
+   color: #fff;
+   padding: 10px 2px;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   font-size: 20px;
+   margin-top: 15px;
+}
+
+#getWeather:hover {
+   background-color: #00547e;
+}
+
+/* Result container styles */
+.result-container {
+   margin-top: 30px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* Weather icon and info styles */
+.weather-icon {
+   font-size: 50px;
+   color: #06181f;
+}
+
+.weather-info {
+   font-size: 28px;
+   color: #333;
+   margin-top: 10px;
+}
+
+/* Error container styles */
+.error-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: red;
+   margin-top: 20px;
+}
+
+.error {
+   font-size: 22px;
+}
+
+/* Sad face icon styles */
+.fa-frown {
+   font-size: 36px;
+   margin-top: 10px;
+}
+
+.container1 {
+   background-color: #f8f8f8;
+   border-radius: 15px;
+   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 20px; /* Add some space between Container 1 and Container 2 */
+}
+
+.container2 {
+   background-color: #f8f8f8;
+   border-radius: 15px;
+   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* ... Your existing styles ... */
